@@ -7,6 +7,7 @@
             let parentBlook2 = parentBlook.replaceAll("_", "'")
             let rarity = blacket.blooks[parentBlook2].rarity
             let color = blacket.rarities[rarity].color
+            element.parentElement.style = "cursor: pointer";
             element.parentElement.appendChild(jQuery.parseHTML(`<div class="styles__blookText___3AMdK-camelCase" style="background-color: ${color};">1</div>`)[0])
         }
     )
